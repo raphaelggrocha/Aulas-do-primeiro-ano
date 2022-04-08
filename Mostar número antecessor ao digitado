@@ -1,0 +1,16 @@
+import javax.swing.JOptionPane;
+public class Main {
+  public static void main(String[] args) {
+
+    int valor, ante;
+  
+    valor = Integer.parseInt(JOptionPane.showInputDialog("Um número: "));
+
+    ante = valor - 1;
+      
+    JOptionPane.showMessageDialog(null, "O antecessor é "+  ante);
+
+    
+    
+    }
+}
