@@ -1,0 +1,21 @@
+import javax.swing.JOptionPane;
+public class Main {
+  public static void main(String[] args) {
+
+    double quant;
+    double valor; 
+    double com;
+  
+    
+   valor = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor da peça: "));
+
+  quant = Double.parseDouble(JOptionPane.showInputDialog("Digite quantas peças foram vendidas "));
+
+  com = (quant * valor) * 0.05;
+
+    JOptionPane.showMessageDialog(null, "A comissão é"+  com);
+
+    
+    
+    }
+}
