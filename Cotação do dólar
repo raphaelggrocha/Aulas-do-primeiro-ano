@@ -1,0 +1,20 @@
+import javax.swing.JOptionPane;
+public class Main {
+  public static void main(String[] args) {
+
+    double cot;
+    double dol; 
+    double real;
+
+   cot = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor da cotação: "));
+
+   dol = Double.parseDouble(JOptionPane.showInputDialog("Digite a quantidade de dolares que deseja converter: "));
+
+    real = dol * cot;
+
+    JOptionPane.showMessageDialog(null, "O valor em real é: R$ "+  real);
+
+    
+    
+    }
+}
