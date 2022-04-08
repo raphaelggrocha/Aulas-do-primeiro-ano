@@ -1,0 +1,31 @@
+import javax.swing.JOptionPane;
+public class Main {
+  public static void main(String[] args) {
+
+    double num1;
+    double num2; 
+    double num3;
+    double num4;
+    double res; 
+    
+   num1 = Double.parseDouble(JOptionPane.showInputDialog("Digite o primeiro numero: "));
+
+  num2 = Double.parseDouble(JOptionPane.showInputDialog("Digite o segundo número: "));
+
+  num3 = Double.parseDouble(JOptionPane.showInputDialog("Digite o terceiro número: "));
+    
+  num4 = Double.parseDouble(JOptionPane.showInputDialog("Digite o quarto número: "));
+
+    num1 = num1*num1;
+    num2 = num2*num2;
+    num3 = num3*num3;
+    num4 = num4*num4;
+    
+    res = num1 + num2 + num3 + num4;
+
+    JOptionPane.showMessageDialog(null, "O valor resultado é "+  res);
+
+    
+    
+    }
+}
