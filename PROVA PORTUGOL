@@ -1,0 +1,43 @@
+programa
+ {
+	funcao inicio() 
+    {
+	cadeia aluno[101]
+	real a1[101] 
+	real a2[101] 
+	real a3[101]
+	inteiro i 
+	real nota[101]
+	real mediaturma = 0.0
+	
+	para(i = 1 ;i<=100; i++)
+	{
+	escreva("Digite o nome do aluno: ")
+	leia(aluno[i])    
+	escreva("Digite a nota A1 do aluno: ")
+	leia(a1[i])
+	escreva("Digite a nota A2 do aluno: ")
+	leia(a2[i])    
+	escreva("Digite a nota A3 do aluno: ")
+	leia(a3[i])
+	
+	}
+   	 para(i = 1 ;i<=100; i++)
+  	 {
+	nota[i] = a1[i]+ a2[i] + a3[i]	    
+	}
+		
+	para(i = 1 ;i<=100; i++)
+	{
+	escreva("\n A nota do(a) ", aluno[i])
+	escreva("\n é: " + nota[i])
+	}
+	
+	 para(i = 1 ;i<=100; i++)
+	 {
+	  mediaturma = mediaturma + nota[i]
+	 }
+	 mediaturma = mediaturma / 100
+	 escreva("\n A média da turma é : "+ mediaturma)
+    }
+}
